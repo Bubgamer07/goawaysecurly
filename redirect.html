@@ -109,7 +109,7 @@
   var button = document.createElement('button');
   const queryString = window.location.search;
 
-  if (queryString.has('url')) {
+  /*if (queryString.has('url')) {
     var link = queryString.get('url');
     var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
     fetch(proxy + link)
@@ -132,7 +132,7 @@
       window.location = new URL(e.oldURL, e.newURL).href;
     }
     window.onhashchange = locationHashChanged;
-  }
+  }*/
 
   menu.style.cssText = `
     position: fixed;
