@@ -109,7 +109,7 @@
   var button = document.createElement('button');
   const queryString = window.location.search;
 
-  /*if (queryString.has('url')) {
+  if (queryString.has('url')) {
     var link = queryString.get('url');
     var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
     fetch(proxy + link)
@@ -121,7 +121,7 @@
         all[i].src = new URL(all[i].src, link).href;
         all[i].src = proxy + all[i].src;
       }
-      }
+    }
     window.onbeforeunload = function(e) {
       e.preventDefault();
       alert(e.toString());
@@ -132,7 +132,7 @@
       window.location = new URL(e.oldURL, e.newURL).href;
     }
     window.onhashchange = locationHashChanged;
-  }*/
+  }
 
   menu.style.cssText = `
     position: fixed;
@@ -170,6 +170,8 @@
     cursor: pointer;
   `;
   button.onclick = function() {
+    var link = prompt("Url?");
+    alert("https://https://bubgamer07.github.io/goawaysecurly/redirect.html?url=" + link);
     /* Old code
     var link = prompt("Url?");
     var proxy = 'https://api.codetabs.com/v1/proxy?quest=';
@@ -181,10 +183,8 @@
       if (all[i].src) {
         all[i].src = new URL(all[i].src, link).href;
         all[i].src = proxy + all[i].src;
-      }*/
-    var link = prompt("Url?");
-    alert("https://https://bubgamer07.github.io/goawaysecurly/redirect.html?url=" + link);
-    /*}
+      }
+    }
     window.onbeforeunload = function(e) {
       e.preventDefault();
       alert(e.toString());
